@@ -8,7 +8,7 @@ $pdo = require 'pdo.php';
 
 $pdo->exec("
 CREATE TABLE IF NOT EXISTS chat (
-    message_id INT PRIMARY KEY,
+    message_id INTEGER PRIMARY KEY,
     date       TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     room       VARCHAR(255) NOT NULL,
     user       VARCHAR(255) NOT NULL,

@@ -8,5 +8,7 @@ Call `setup.php` to init database.
 
 ## Endpoints
 
-- `list.php` returns a list of chat rooms
-- `chat.php` returns chat information (GET for messages, POST to send a message)
+- `GET list.php` returns a list of chat rooms
+- `GET chat.php?room={room}` returns chat messages
+- `POST chat.php` adds a message to a chat room
+    - `{"room":"{room}","user":"{username}","message":"{message}"}`
